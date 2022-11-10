@@ -42,9 +42,9 @@ except ImportError:
        print("Licesing "+error)
 try:
     import bs4
-    print('bs4'+ok)
+    print('bs4 '+ok)
 except ModuleNotFoundError:
-    print('bs4'+error)
+    print('bs4 '+error)
 try:
  import rich
  print("rich "+ok)
