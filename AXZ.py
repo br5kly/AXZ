@@ -15,6 +15,8 @@ def basix():
     os.system('pip install licensing')
     time.sleep(1)
     os.system('pip install pystyle')
+    time.sleep(1)
+    os.system('pip install bs4')
 
 def form():
  note = """╔═╗╦  ╔═╗╔╗╔╔═╗╔╗╔╦ ╦
@@ -38,6 +40,11 @@ try:
     print("Licensing "+ok)
 except ImportError:
        print("Licesing "+error)
+try:
+    import bs4
+    print('bs4'+ok)
+except ModuleNotFoundError:
+    print('bs4'+error)
 try:
  import rich
  print("rich "+ok)
@@ -69,6 +76,7 @@ try:
     import pystyle
     import stdiomask
     import colorama
+    import bs4
     print("ﻡﺎﻤﺗ ﻲﺷ ﻞﻛ ﺺﻗﺍﻮﻧ ﺪﺟﻮﻳ ﻻ")
     time.sleep(4)
     os.system('clear')
@@ -82,6 +90,7 @@ def check():
         import colorama
         import stdiomask
         import pystyle
+        import bs4
         print("1000000000000000000% ")
     except ModuleNotFoundError:
         print("ﻚﺑ ﻪﺻﺎﺨﻟﺍ ﺲﻜﻣﺮﻴﺗ ﻪﺨﺴﻧ ﻲﻓ ﻩﺬﻬﻓ ﻪﻠﻜﺸﻤﻟﺍ ﻞﺤﺗ ﻢﻟ ﺍﺫﺍ ﻩﺍﺩﻻﺍ ﻞﻴﻐﺸﺗ ﺪﻋﺍ ﻭ ﻪﻠﻜﺸﻤﻟﺍ ﺺﺤﻓ ﻪﻟﻭﺎﺤﻣ ﻢﺘﻴﺳ ﺎﻣ ﻪﻠﻜﺸﻣ ﻙﺎﻨﻫ")
